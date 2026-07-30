@@ -1,20 +1,64 @@
 aid: aerodome
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aerodome.png
 name: Aerodome
-description: Aerodome is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aerodome was a Drone-as-First-Responder (DFR) company founded in 2023 by former
+  California police officer Rahul Sidhu (CEO) and Kenaniah Cerny (Chief Architect).
+  It built a fully integrated, automated, and remotely operated software platform
+  that let public-safety agencies dispatch autonomous drones directly from 911 calls,
+  pairing DJI drone hardware, robotic battery-swap docking nests, and radar with
+  Aerodome DFR software featuring augmented-reality street overlays, automated flight
+  operations, computer-aided-dispatch integration, and live airspace awareness. The
+  company reported average 86-second response times to 911 calls. Backed by a16z, CRV,
+  and 2048 Ventures across a seed (Oct 2023) and $21.5M Series A (May 2024), Aerodome
+  was acquired by Flock Safety in October 2024 for over $300 million; its technology
+  and software now ship as the Flock Safety "Flock DFR" product line, and the
+  aerodome.com domain redirects to that product page.
 url: https://raw.githubusercontent.com/api-evangelist/aerodome/refs/heads/main/apis.yml
 x-type: company
 x-source: a16z-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Flock Safety
+x-acquired-date: '2024-10'
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Drones
+- Drone as First Responder
+- Public Safety
+- Law Enforcement
+- Emergency Response
+- Defense Tech
+- Aerial Intelligence
+- Autonomous Systems
+common:
+- type: DomainSecurity
+  url: security/aerodome-domain-security.yml
+- type: Website
+  url: https://www.aerodome.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
